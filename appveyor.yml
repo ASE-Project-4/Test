@@ -16,6 +16,6 @@ before_build:
 on_success:
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-  - git config --global user.email "AppVeyor"
-  - git config --global user.name "AppVeyor"
+  - git checkout master
+  - git merge --ff-only %APPVEYOR_REPO_COMMIT%
   - git status
