@@ -1,0 +1,21 @@
+environment:
+  access_token:
+    secure: qk5xX/i8yy/quJxD4TftDWgKbn+/5sApifI35hcQmFy7PF2fu8XAxpX1/GD3Qb2C
+
+branches:
+  only:
+    - release
+
+build:
+  project: Test.sln
+  verbosity: quiet
+
+before_build:
+  - nuget.exe restore Test.sln
+
+on_success:
+  - git config --global credential.helper store
+  - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  - git config --global user.email "AppVeyor"
+  - git config --global user.name "AppVeyor"
+  - git status
