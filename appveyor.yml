@@ -14,8 +14,9 @@ before_build:
   - nuget.exe restore Test.sln
 
 on_success:
+  - msbuild Test.sln /t:Clean
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-  - git checkout master
+  - git checkout -fq master
   - git merge --ff-only %APPVEYOR_REPO_COMMIT%
   - git status
