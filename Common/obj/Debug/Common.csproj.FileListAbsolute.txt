@@ -1,0 +1,10 @@
+C:\Users\University\University\4\Project\Repositories\Web\Common\bin\Debug\Common.dll.config
+C:\Users\University\University\4\Project\Repositories\Web\Common\bin\Debug\Common.dll
+C:\Users\University\University\4\Project\Repositories\Web\Common\bin\Debug\Common.pdb
+C:\Users\University\University\4\Project\Repositories\Web\Common\bin\Debug\EntityFramework.dll
+C:\Users\University\University\4\Project\Repositories\Web\Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\University\University\4\Project\Repositories\Web\Common\bin\Debug\EntityFramework.xml
+C:\Users\University\University\4\Project\Repositories\Web\Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\University\University\4\Project\Repositories\Web\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\University\University\4\Project\Repositories\Web\Common\obj\Debug\Common.dll
+C:\Users\University\University\4\Project\Repositories\Web\Common\obj\Debug\Common.pdb
